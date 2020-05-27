@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             }
             else {
                 Log.d("로그인확인","관리자아님")
-                Toast.makeText(this, "관리자입니다",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "관리자아님",Toast.LENGTH_SHORT).show()
             }
 
 
