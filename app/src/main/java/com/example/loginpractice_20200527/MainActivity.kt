@@ -12,6 +12,25 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        loginBtn.setOnClickListener {
+            val inputEmail = emailEdt.text.toString()
+            val inputPw =   pwEdt.text.toString()
+
+            // email / 비번 확인 해서 맞으며 / 틀리면 처리가 다름.
+            // => 분기 처리 => 조건문
+
+            if (inputEmail == "admin@test.com" && inputPw == "qwer") {
+                Log.d("로그인확인","관리자맞다")
+                Toast.makeText(this, "관리자입니다",Toast.LENGTH_SHORT).show()
+            }
+            else {
+                Log.d("로그인확인","관리자아님")
+                Toast.makeText(this, "관리자입니다",Toast.LENGTH_SHORT).show()
+            }
+
+
+        }
+
         eventBtn.setOnClickListener {
 
             Log.d("이벤트확인", "버튼 클릭")
