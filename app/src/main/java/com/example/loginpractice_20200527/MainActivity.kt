@@ -17,6 +17,10 @@ class MainActivity : AppCompatActivity() {
             Log.d("이벤트확인", "버튼 클릭")
             Log.e("이벤트확인","에러 로그 발생")
             Toast.makeText(this,"버튼 클릭 됨",Toast.LENGTH_LONG).show()
+
+            val inputContent = contentEdt.text.toString()
+
+            eventBtn.text = inputContent
         }
     }
 }
