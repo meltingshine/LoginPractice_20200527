@@ -1,5 +1,6 @@
 package com.example.loginpractice_20200527
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -27,6 +28,13 @@ class MainActivity : AppCompatActivity() {
                 Log.d("로그인확인","관리자아님")
                 Toast.makeText(this, "관리자아님",Toast.LENGTH_SHORT).show()
             }
+
+        }
+
+        signUpBtn.setOnClickListener {
+            val myIntent = Intent(this,SignUpActivity::class.java) //티켓만 뽑은겨
+            startActivity(myIntent) //요 티켓에 쓰인대로 가주세요.
+
 
 
         }
